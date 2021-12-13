@@ -1,58 +1,103 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
-body {
-    color: #1B3A4B;
-    background-color: #ADB5BD;
+body{
+    background-color: white;
+    font-family: 'Nunito', sans-serif;
 }
-.login {
-    background-color: #F8F8FF;
-    padding-top: 5px;
-    padding-bottom: 70px;
+.login{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 45%;
+    padding-left: 5%;
     margin: auto;
-    margin-top: 85px;
+    border-right: 2px solid black;
+}
+.login-photos{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
     width: 40%;
-    font-family: 'Nunito', sans-serif;
+    padding: 40px;
+}
+.first-field input{
+    display: block;
+    width: 57%;
     text-align: center;
-    box-shadow: 10px 10px 5px gray;
-}
-h2{
-    font-size: 30px;
-}
-p {
-    font-size: 23px;
-}
-.form-fields input {
-    text-align: left;
-    display: block;
-    width: 50%;
-    padding: 8px;
-    border: none;
+    padding: 10px;
     margin: auto;
-    border-radius: 7px;
-    font-size: 22px;
-    font-family: 'Caveat', cursive;
-    background-color: #1B3A4B;
-    box-shadow: 3px 3px 5px gray;
-}
-.other-fields p {
-    display: block;
-    text-align: center;
-    padding: 0px;
-    margin: 10px auto;
-    font-size: 23px;
-}
-a {
-    text-decoration: none;
-}
-.button {
-    display: block;
-    padding: 6px;
-    width: 20%;
-    margin: auto;
-    border: none;
-    border-radius: 7px;
+    margin-left: 14.5%;
+    margin-top: 7%;
     font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid #ADB5BD;
+}
+.other-option{
+    width: 80%;
+    text-align: center;
+    border-bottom: 2px solid #ADB5BD;
+    line-height: 0.1em;
+    margin: auto;
+    margin-left: 5%;
+    margin-top: 7%;
+}
+.other-option span{ 
+    background: white; 
+    color: #ADB5BD;
+    padding: 0 10px;
+}
+.form-fields{
+    display: block;
+    width: 60%;
+    margin: auto;
+    margin-left: 15%;
+    margin-top: 5%;
+    
+}
+.form-fields input{
+    display: block;
+    width: 95%;
+    padding: 10px;
+    margin: auto;
+    margin-left: 0px;
+    margin-top: -15px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid #ADB5BD;
+}
+::placeholder{
     font-family: 'Nunito', sans-serif;
-    background-color: #06D6A0;
-    box-shadow: 3px 3px 5px gray;
+    color: gray;
+}
+#checkbox{
+    float: left;
+    margin-top: 5px;
+    margin-left: 15%;
+}
+.forgot-password{
+    display: inline-block;
+    margin-left: 20%;
+}
+a{
+    text-decoration: none;
+    color: #0077B6;
+}
+.button{
+    display: block;
+    width: 60%;
+    padding: 10px;
+    margin: auto;
+    margin-left: 15%;
+    margin-top: 40px;
+    font-size: 20px;
+    color: white;
+    background-color: #0096C7;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 10px;
+    border: #0096C7;
+}
+#register{
+    float: left;
+    margin-top: 20px;
+    margin-left: 15%;
 }

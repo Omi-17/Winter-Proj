@@ -1,53 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign in</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="login.css">
     <style>
-        #mail {
-            margin-top: 40px;
-        }
-
-        #pass {
-            margin-top: 30px;
-        }
-
-        ::placeholder {
-            color: #F8F8FF;
-        }
+    h3::after{
+        content: '*';
+        color: red;
+    }
     </style>
 </head>
-
 <body>
     <div class="login">
-        <h2>SIGN IN</h2>
 
-        <p>It's great to have you back !!</p>
-
-        <form action="noaction.php">
-            <div class="form-fields" id="mail">
-                <input type="text" name="" placeholder="Mail ID">
-            </div>
-
-            <div class="form-fields" id="pass">
-                <input type="text" name="" placeholder="Password">
-            </div>
-        </form>
-        <br>
-
-        <div class="other-fields">
-            <p><a href="#">Forgot Password ?</a></p>
-            <p>Haven't registered yet? <a href="sign-up.html">Sign Up</a></p>
-        </div>
+        <h1>Login ✌</h1>
+        <p>Log In with the data you entered during registration</p>
 
         <form action="noaction.php">
+
+            <div class="first-field">
+                <input type="text" name="" placeholder="Sign In with Google">
+            </div>
+            
+            <p class="other-option"><span>or Sign in with Email</span></p>
+
+            <div class="form-fields">
+                <h3>Email</h3>
+                <input type="text" name="" placeholder="✉️ Your e-mail">
+            
+                <h3>Password</h3>
+                <input type="text" name="" placeholder="🔒 *********">
+
+            </div>
+
+            <div class="final-field">
+                <input type="checkbox" name="" id="checkbox">
+                <strong><p>Remember me &ensp;<span class="forgot-password"><a href="#">Forgot Password ?</a></span></p></strong>
+            </div>
+
             <button class="button">Login</button>
+
         </form>
+
+        <p id="register">Don't have an account yet? <a href="sign-up.html">Create an Account</a></p>
+    </div>
+
+    <div class="login-photos">
+        <h2>some images or design about travelling for the users to see when they are signing up</h2>
     </div>
 </body>
-
 </html>
